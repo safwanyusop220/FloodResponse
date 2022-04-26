@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class qqq extends AppCompatActivity {
+public class test extends AppCompatActivity {
 
     private boolean passwordShowing = false;
     private boolean conPasswordShowing = false;
@@ -91,7 +91,7 @@ public class qqq extends AppCompatActivity {
         SignInTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(qqq.this, MainActivity.class ));
+                startActivity(new Intent(test.this, LoginActivity.class ));
             }
         });
 

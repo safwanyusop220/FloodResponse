@@ -10,14 +10,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private boolean passwordShowing = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         EditText usernameEt = findViewById(R.id.usernameEt);
         final EditText passwordEt = findViewById(R.id.passwordEt);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         SignUpTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, qqq.class));
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
 

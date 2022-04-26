@@ -102,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
         SignInTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RegisterActivity.this, OTPVerification.class ));
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class ));
 //                finish();
             }
         });
