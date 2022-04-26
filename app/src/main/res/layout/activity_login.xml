@@ -16,11 +16,11 @@
 
 
         <ImageView
-            android:layout_width="261dp"
-            android:layout_height="224dp"
+            android:layout_width="220dp"
+            android:layout_height="254dp"
             android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:background="@drawable/apps_logo"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flood_logo"
             android:elevation="102dp" />
 
     <EditText
@@ -38,7 +38,7 @@
         android:paddingEnd="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         />
 
     <RelativeLayout
@@ -93,7 +93,8 @@
         android:textSize="16sp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:textColor="@color/teal_200"
+        android:textColor="#6ECCF8"
+        android:textStyle="bold"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -159,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
-            android:textColor="@color/teal_200"
+            android:textColor="#6ECCF8"
             android:layout_marginBottom="10dp"
             />
 
