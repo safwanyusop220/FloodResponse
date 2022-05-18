@@ -9,22 +9,25 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     private boolean passwordShowing = false;
+    private EditText usernameEt, passwordEt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        EditText usernameEt = findViewById(R.id.usernameEt);
-        final EditText passwordEt = findViewById(R.id.passwordEt);
+        usernameEt = findViewById(R.id.usernameEt);
+        passwordEt = findViewById(R.id.passwordEt);
         TextView forgotPasswordTv = findViewById(R.id.forgotPasswordTv);
         final ImageView passwordIconIv = findViewById(R.id.passwordIconIv);
         TextView loginBtn = findViewById(R.id.loginBtn);
         TextView SignUpTv = findViewById(R.id.SignUpTv);
+
 
         passwordIconIv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +65,26 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
+
+    }
+
+    public void login(View view) {
+
+        Intent intent = null;
+        String email = usernameEt.getText().toString(), password = passwordEt.getText().toString();
+
+        if (email.equals("test@gmail.com")&& password.equals("111111"))
+            intent = new Intent(this, MainActivity.class);
+
+//            else if (email.equals("B031910120@student.utem")  && password.equals("123abc"))
+//                intent = new Intent(this, StudentMainActivity.class);
+
+        if(intent != null)
+            startActivity(intent);
+        else
+            Toast.makeText(this, "Invalid email/password", Toast.LENGTH_LONG).show();
+
+        intent = new Intent(this, LoginActivity.class);
 
     }
 }
