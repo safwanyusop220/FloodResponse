@@ -7,24 +7,47 @@
     android:background="#4DACF8"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableRow>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/dashboard"
             android:text="Dashboard"
             android:padding="5dp"
             android:fontFamily="@font/googlesans_bold"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:layout_margin="20dp"/>
+            android:layout_weight="1"
+            android:layout_margin="15dp"/>
 
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/backBtn"
+            android:padding="5dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/logout"
+            />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
 
         <GridLayout
             android:layout_width="match_parent"
