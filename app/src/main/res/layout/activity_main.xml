@@ -63,6 +63,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="170dp"
+                android:id="@+id/gyroscopeCard"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
                 app:cardBackgroundColor="#323030"
@@ -130,6 +131,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/floodLevelCard"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
